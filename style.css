@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  background-color: rgb(52, 49, 49);
+}
+
+/* header section > nav section's styles */
+
+header > nav {
+  padding: 30px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 80px;
+}
+
+header > nav ul {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  border-radius: 20px;
+  padding: 10px 15px;
+  padding-left: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav > h1 > i {
+  color: rgb(230, 83, 60);
+  font-size: 1.6rem;
+  font-weight: 800;
+  /* line-height: 120%; */
+}
+
+ul li a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.home {
+  padding: 8px 10px;
+  border-radius: 20px;
+  background: rgb(230, 83, 60);
+}
+
+nav img {
+  display: none;
+}
+/* banner div styles */
+
+/* banner description div styles */
+
+.banner_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.banner_description > h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  line-height: 80px;
+  font-weight: 900;
+}
+
+.miama {
+  font-family: "Miama", sans-serif;
+  font-size: 5rem;
+}
+
+.banner_description > .p1 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 15px 0;
+}
+
+.banner_description > .p2 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 15px 0;
+
+  display: none;
+}
+.button_container > .join_club {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  padding: 10px 20px;
+  font-weight: 600;
+  line-height: 22px;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  margin-right: 10px;
+}
+
+.button_container > .download_app {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 10px 20px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 42px;
+}
+
+/* buttons_img_holder div styles */
+
+.buttons_img_holder {
+  position: relative;
+}
+
+.five_hundred {
+  text-align: left;
+  width: 200px;
+  height: 98px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  /* background: rgba(255, 255, 255, 0.1); */
+  position: absolute;
+  top: 150px;
+  left: 240px;
+}
+
+.big_five {
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding-left: 25px;
+}
+
+.free_video {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: rem;
+  font-weight: 400;
+  line-height: 20px;
+  padding-left: 25px;
+}
+
+.rad_dot {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(230, 83, 60);
+  border: none;
+  border-radius: 50%;
+}
+.three_hundred {
+  text-align: left;
+  width: 200px;
+  height: 98px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  /* background: rgba(255, 255, 255, 0.1); */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 70px;
+  right: 260px;
+}
+
+/* responsive design for small devise*/
+
+@media screen and (max-width: 576px) {
+  header nav {
+    width: 100%;
+    border: 1px solid red;
+    margin: 20px 0;
+    /* padding: 30px 20px; */
+    display: flex;
+    padding: 0px;
+    justify-content: space-evenly;
+  }
+
+  nav h1 {
+    border: 1px solid turquoise;
+    font-size: 1.2rem;
+  }
+  header nav ul li {
+    display: none;
+  }
+
+  nav img {
+    border: 1px solid green;
+    height: 26px;
+    width: 26px;
+    display: block;
+  }
+
+  .banner_container {
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner_description .p1 {
+    display: none;
+  }
+
+  .banner_description .p2 {
+    border:1px solid orange;
+    display: block;
+  }
+
+  .button_container{
+    border: 1px solid teal;
+  }
+  .buttons_img_holder {
+    border: 1px solid cornsilk;
+    position: relative;
+  }
+
+  .five_hundred {
+    width: 180px;
+    position: absolute;
+    top: 40px;
+    left: 180px;
+  }
+
+  .three_hundred {
+    position: absolute;
+    top: 290px;
+    right: 120px;
+  }
+}
