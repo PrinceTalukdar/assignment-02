@@ -186,7 +186,6 @@ nav img {
 @media screen and (max-width: 576px) {
   header nav {
     width: 100%;
-    border: 1px solid red;
     margin: 20px 0;
     /* padding: 30px 20px; */
     display: flex;
@@ -195,7 +194,6 @@ nav img {
   }
 
   nav h1 {
-    border: 1px solid turquoise;
     font-size: 1.2rem;
   }
   header nav ul li {
@@ -203,14 +201,12 @@ nav img {
   }
 
   nav img {
-    border: 1px solid green;
     height: 26px;
     width: 26px;
     display: block;
   }
 
   .banner_container {
-    border: 1px solid yellow;
     display: flex;
     flex-direction: column;
   }
@@ -220,15 +216,12 @@ nav img {
   }
 
   .banner_description .p2 {
-    border:1px solid orange;
     display: block;
   }
 
   .button_container{
-    border: 1px solid teal;
   }
   .buttons_img_holder {
-    border: 1px solid cornsilk;
     position: relative;
   }
 
